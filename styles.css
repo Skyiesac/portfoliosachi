@@ -1,12 +1,12 @@
 *{ margin: 0;
   padding: 0;
   box-sizing:border-box;
+
 }
 
 li, a, button {
 font-weight:700;
 }
-
 nav{
 padding:20px 10%;
 display:flex;
@@ -18,20 +18,24 @@ color:black;
 }
 .nav_menu li{
 
-font-size:20px;
+font-size:30px;
 
 padding:0px 20px;
 }
-.nav_menu ul:hover{
+.nav_menu li:hover{
 box-shadow:#000000;
 color:white;
 }
 nav button{
-padding : 10px 25px;
+padding : 20px 50px;
 background-color: #000000;
 color:white;
 border-radius :50px;
 
+}
+nav button:hover{
+  background-color: rgb(0, 225, 255);
+  color:white;
 }
 @media(min-width:760px){
 .nav_menu li{
@@ -108,15 +112,20 @@ gap: 16px;
 margin:10px 0;
 color:#000000;
 }
+.abu{
+background-color: #000;
+}
 .abou{
-border:2px solid black;
+border:2px solid rgb(255, 255, 255);
 animation: bor 3s infinite;
 padding :10%;
 text-align:center;
 margin:10%;
+color:white;
 h1{
   margin-bottom: 35px;
   text-decoration: underline;
+  font-size:50px;
 }
 p{
   font-size:27px;
@@ -244,4 +253,74 @@ label{ display:block; margin-bottom:5px; }
   width:3%;
   border-radius:6px;
   color:black;
+}
+
+.skill #move{
+  color:white;
+  font-family: sans-serif;
+  height:80px;
+  width:100%;
+  position:relative;
+  font-weight:bold;
+  background-color: rgb(43, 41, 41);
+  font-size:25px;
+  padding: 25px;
+  animation: skim 6s forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 80px;
+}
+@keyframes skim{
+  0%{left: 0px;}
+  100%{left:100%}
+}
+.skill #move:hover{
+  color:darkturquoise;
+}
+.score #move2{
+  color:white;
+  font-family: sans-serif;
+  height:80px;
+  width:100%;
+  position:relative;
+  font-weight:bold;
+  background-color: rgb(43, 41, 41);
+  font-size:25px;
+  padding: 25px;
+  animation: scom 6s reverse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 80px;
+}
+@keyframes scom{
+  0%{right: 0px;}
+  100%{right:100%}
+}
+.score #move2:hover{
+  color:rgb(238, 255, 0);
+}
+.abou p, .abou h1{
+  animation: net 3s ease-in-out infinite ;
+}
+@keyframes net{
+ 0%{ background: linear-gradient(rgb(255, 255, 255), rgb(128, 118, 118));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;}
+  50%{
+    background: linear-gradient(rgb(90, 87, 87), rgb(49, 44, 44));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  75%{
+    background: linear-gradient(rgb(54, 51, 51), rgb(0, 0, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  100%{
+    background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
 }
