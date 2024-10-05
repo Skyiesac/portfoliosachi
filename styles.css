@@ -214,13 +214,14 @@ transform: translate(-50%, -50%);
    margin:100px auto; 
    align-items: center; 
    text-align:center;
-    width:500px;
-    height:400px;
+    width:60%;
+    height:40%;
      border: 1px solid #000;
       box-shadow: 0 0 10px #000;
        padding:20px; }
 
 label{ display:block; margin-bottom:5px; }
+
 .footer {
  background-color: #000;
   opacity:1;
@@ -239,8 +240,8 @@ label{ display:block; margin-bottom:5px; }
   padding-bottom:10px;
 }
 .pfic img{
-  height:2%;
-  width:2%;
+  height:3%;
+  width:3%;
   border-radius:6px;
   color:black;
 }
