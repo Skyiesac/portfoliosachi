@@ -3,9 +3,22 @@
   box-sizing:border-box;
 
 }
-.nac_menu ul li:hover{
-  color:#00d9ff;
+@media(max-width:600px){
+  nav{
+    background-color:white;
+    color:black;
+  }
+  .nav_menu ul a{
+    color:black;
+    }
 }
+@media(min-width:600px){
+nav{
+  background-color: #000;
+  color:white;
+} .nav_menu ul a{
+  color:white;
+  }}
 li, a, button {
 font-weight:700;
 }
@@ -15,8 +28,9 @@ display:flex;
 justify-content: space-between;
 align-items: center;
 }
-.nav_menu ul a{
-color:black;
+
+.nac_menu ul li:hover{
+  color:#00d9ff;
 }
 .nav_menu li{
 
